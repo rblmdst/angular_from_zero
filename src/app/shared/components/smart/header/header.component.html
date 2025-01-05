@@ -1,0 +1,16 @@
+<header>
+  @if(!isConnected()) {
+  <nav>
+    <ul>
+      <li><a routerLink="/register">Register</a></li>
+      <li><a routerLink="/login">Login</a></li>
+    </ul>
+  </nav>
+
+  } @else {
+  <div class="login-infos">
+    <button (click)="onLogout()">Logout</button>
+    <div class="username">Modeste A.</div>
+  </div>
+  }
+</header>

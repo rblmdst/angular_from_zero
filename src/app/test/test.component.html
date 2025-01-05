@@ -1,0 +1,139 @@
+<h1 class="page-title">Contact List</h1>
+
+<!-- Search -->
+<input placeholder="Search..." class="search" />
+
+<!-- Table -->
+<table class="table">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Level</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tr>
+    <td>Mohamed Ali</td>
+    <td>M</td>
+    <td>
+      <button>Edit</button>
+      <button>Delete</button>
+      <button>Details</button>
+    </td>
+  </tr>
+  <tr>
+    <td>Soundjata Keita</td>
+    <td>S</td>
+    <td>
+      <button>Edit</button>
+      <button>Delete</button>
+      <button>Details</button>
+    </td>
+  </tr>
+</table>
+
+<!-- Form -->
+<form autocomplete="off" novalidate class="form">
+  <div class="red">
+    <p>The name is required</p>
+    <p>The name max length is 30 characters</p>
+  </div>
+  <div class="form-row">
+    <label for="name">Name</label>
+    <input formControlName="name" form id="name" type="text" />
+  </div>
+  <div class="red">
+    <p>The level is required</p>
+  </div>
+  <div class="form-row">
+    <label for="level">Level</label>
+    <select formControlName="level" id="level">
+      <option value="J">Junior</option>
+      <option value="M">Medium</option>
+      <option value="S">Senior</option>
+    </select>
+  </div>
+  <div class="red">
+    <p>The department is required</p>
+  </div>
+  <div class="form-row">
+    <label for="department">Department</label>
+    <select formControlName="department" id="department">
+      <option value="IT">IT</option>
+      <option value="Marketing">Marketing</option>
+      <option value="HR">HR</option>
+    </select>
+  </div>
+  <div class="form-buttons">
+    <button disabled type="submit">Save/Add</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>
+<!-- Details -->
+<div class="details">
+  <div class="details-row">
+    <div class="label">Name :</div>
+    <div class="value">Henri K.</div>
+  </div>
+  <div class="details-row">
+    <div class="label">Level :</div>
+    <div class="value">S</div>
+  </div>
+  <div class="details-row">
+    <div class="label">Department :</div>
+    <div class="value">IT</div>
+  </div>
+</div>
+
+<!-- Login Form -->
+<form autocomplete="off" novalidate class="form">
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input name="email" id="email" type="text" />
+  </div>
+  <div class="form-row">
+    <label for="password">password</label>
+    <input name="password" id="password" type="password" />
+  </div>
+  <div class="form-buttons">
+    <button type="submit">Login</button>
+    <button type="reset">Cancel</button>
+  </div>
+</form>
+<!-- Register Form -->
+<form autocomplete="off" novalidate class="form">
+  <div class="form-row">
+    <label for="firstName">First name</label>
+    <input name="firstName" id="firstName" type="text" />
+  </div>
+  <div class="form-row">
+    <label for="lastName">Last name</label>
+    <input name="lastName" id="lastName" type="text" />
+  </div>
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input name="email" id="email" type="text" />
+  </div>
+  <div class="form-row">
+    <label for="password">password</label>
+    <input name="password" id="password" type="password" />
+  </div>
+  <div class="form-buttons">
+    <button type="submit">Register</button>
+    <button type="reset">Cancel</button>
+  </div>
+</form>
+
+<!-- header -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+  <div class="login-infos">
+    <button>Logout</button>
+    <div class="username">Modeste A.</div>
+  </div>
+</header>

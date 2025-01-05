@@ -1,0 +1,28 @@
+<!-- Register -->
+@if (message) {
+<div class="message">
+  {{ message }}
+</div>
+}
+<form [formGroup]="form" autocomplete="off" novalidate class="form">
+  <div class="form-row">
+    <label for="firstName">First name</label>
+    <input formControlName="firstName" id="firstName" type="text" />
+  </div>
+  <div class="form-row">
+    <label for="lastName">Last name</label>
+    <input formControlName="lastName" id="lastName" type="text" />
+  </div>
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input formControlName="email" id="email" type="text" />
+  </div>
+  <div class="form-row">
+    <label for="password">password</label>
+    <input formControlName="password" id="password" type="password" />
+  </div>
+  <div class="form-buttons">
+    <button (click)="onSubmit()" type="submit">Register</button>
+    <button type="reset">Cancel</button>
+  </div>
+</form>

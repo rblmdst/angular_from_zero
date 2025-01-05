@@ -1,0 +1,44 @@
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #8497a8;
+  padding: 10px;
+  margin-bottom: 10px;
+  .login-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .username {
+      font-size: 1.4rem;
+      margin-left: 20px;
+      color: #fff;
+    }
+    button {
+      padding: 3px 6px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      color: #57636e;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  nav ul {
+    display: flex;
+    font-size: 1.4rem;
+    li {
+      list-style: none;
+      a {
+        padding: 5px;
+        color: #fff;
+        text-decoration: none;
+        &:hover,
+        a.active {
+          color: #2c5e77;
+        }
+      }
+    }
+  }
+}
